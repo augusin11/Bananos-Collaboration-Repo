@@ -7,4 +7,5 @@
     <string name="voiceIcon">Button for voice recognition</string>
     <string name="this_is_a_voice_icon">This is a voice icon</string>
     <string name="back">Back</string>
+    <string name="text">text</string>
 </resources>

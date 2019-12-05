@@ -8,12 +8,12 @@ public class ItemList {
 
     public ItemList() {
         groceryList = new ArrayList<>();
-        groceryList.add(new GroceryItem("Banana", 2.99, "lbs", "Costco"));
-        groceryList.add(new GroceryItem("Apple", 1.99, "lbs", "Costco"));
-        groceryList.add(new GroceryItem("Mango", 3.59, "lbs", "Costco"));
-        groceryList.add(new GroceryItem("Chicken", 12.99, "lbs", "Costco"));
-        groceryList.add(new GroceryItem("Butter", 3.99, "lbs", "Costco"));
-        groceryList.add(new GroceryItem("Pizza", 7.99, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("banana", 2.99, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("apple", 1.99, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("mango", 3.59, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("chicken", 12.99, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("butter", 3.99, "lbs", "Costco"));
+        groceryList.add(new GroceryItem("pizza", 7.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Cheese", 5.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Juice", 6.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Bread", 2.49, "lbs", "Costco"));
@@ -52,26 +52,26 @@ public class ItemList {
         groceryList.add(new GroceryItem("Pasta", 1.99, "lbs", "Superstore"));
         ////
         groceryList = new ArrayList<>();
-        groceryList.add(new GroceryItem("Banana", 2.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Apple", 1.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Mango", 8.59, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Chicken", 6.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Butter", 2.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Pizza", 8.76, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Cheese", 7.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Juice", 2.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Bread", 1.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Cake", 9.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Eggs", 3.29, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Rice", 18.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Flour", 11.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Tea", 3.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Coffee", 1.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Yogurt", 9.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Potato", 6.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Onion", 1.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Corn", 9.99, "lbs", "Safeway"));
-        groceryList.add(new GroceryItem("Pasta", 6.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("banana", 2.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("apple", 1.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("mango", 8.59, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("chicken", 6.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("butter", 2.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("pizza", 8.76, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("cheese", 7.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("juice", 2.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("bread", 1.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("cake", 9.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("eggs", 3.29, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("rice", 18.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("flour", 11.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("tea", 3.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("coffee", 1.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("yogurt", 9.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("potato", 6.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("onion", 1.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("corn", 9.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("pasta", 6.99, "lbs", "Safeway"));
     }
 
     public ArrayList getList() {

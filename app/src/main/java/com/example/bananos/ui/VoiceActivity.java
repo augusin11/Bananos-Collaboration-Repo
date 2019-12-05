@@ -20,7 +20,7 @@ import java.util.Locale;
 public class VoiceActivity extends AppCompatActivity {
     ImageButton voiceButton;
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
-    private List<String> inputItems = new ArrayList<>();
+    private ArrayList<String> inputItems = new ArrayList<>();
     private ItemList itemList = new ItemList();
 
 
@@ -41,6 +41,8 @@ public class VoiceActivity extends AppCompatActivity {
 
     public void clickListPage(View view) {
         Intent intent = new Intent(this, ListActivity.class);
+        intent.putStringArrayListExtra("key", inputItems);
+
         startActivity(intent);
     }
 
