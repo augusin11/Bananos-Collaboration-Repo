@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +21,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        textView = findViewById(R.id.textView2);
+        textView = findViewById(R.id.viewList);
 
         intent = getIntent();
         ArrayList<String> itemList = intent.getStringArrayListExtra("key");
