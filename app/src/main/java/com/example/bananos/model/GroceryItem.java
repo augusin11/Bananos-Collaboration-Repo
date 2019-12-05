@@ -1,4 +1,4 @@
-package com.example.sixhourgrind.model;
+package com.example.bananos.model;
 
 public class GroceryItem {
     private String name;
@@ -8,7 +8,7 @@ public class GroceryItem {
     private int quantity;
 
 
-    public GroceryItem(String name, double price, String units, String store) {
+    GroceryItem(String name, double price, String units, String store) {
         this.name = name;
         this.price = price;
         this.units = units;

@@ -1,6 +1,6 @@
-package stringParser;
+package com.example.bananos.stringParser;
 
-import com.example.sixhourgrind.model.GroceryItem;
+import com.example.bananos.model.GroceryItem;
 
 import java.util.ArrayList;
 import java.util.Arrays;

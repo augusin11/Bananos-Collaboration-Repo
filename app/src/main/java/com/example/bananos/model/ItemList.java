@@ -1,11 +1,12 @@
-package com.example.sixhourgrind.model;
+package com.example.bananos.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ItemList {
     private ArrayList<GroceryItem> groceryList;
 
-    ItemList() {
+    public ItemList() {
         groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("Banana", 2.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Apple", 1.99, "lbs", "Costco"));
@@ -75,6 +76,18 @@ public class ItemList {
 
     public ArrayList getList() {
         return groceryList;
+    }
+
+    private List<String> getNames() {
+        List<String> itemNames = new ArrayList<String>();
+        for (GroceryItem groceryItem : groceryList) {
+            itemNames.add(groceryItem.getName());
+        }
+        return itemNames;
+    }
+
+    public Boolean isValidItemName(String name) {
+        return getNames().contains(name);
     }
 
 }
