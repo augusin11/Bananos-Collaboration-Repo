@@ -9,29 +9,41 @@
     tools:context=".ui.ListActivity">
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/viewList"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/layout_bg"
-        android:backgroundTint="@android:color/white"
-        android:onClick="clickVoicePage"
-        android:text="@string/back"
-        android:textColor="@android:color/black"/>
-
     <TextView
         android:id="@+id/viewList"
-        android:layout_width="120dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
+        android:layout_width="399dp"
+        android:layout_height="358dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:background="@drawable/layout_bg"
         android:backgroundTint="@android:color/white"
-        android:gravity="center"
+        android:scrollbars="vertical"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="226dp"
+        android:layout_height="86dp"
+        android:layout_below="@+id/viewList"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="TextView" />
 
 </RelativeLayout>

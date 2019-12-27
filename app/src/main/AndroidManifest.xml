@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".ui.ListActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.VoiceActivity" />
         <activity android:name=".ui.VoiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

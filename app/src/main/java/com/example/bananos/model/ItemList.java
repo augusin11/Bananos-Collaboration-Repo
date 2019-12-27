@@ -5,6 +5,9 @@ import java.util.List;
 
 public class ItemList {
     private ArrayList<GroceryItem> groceryList;
+    private ArrayList<GroceryItem> groceryList2;
+    private ArrayList<GroceryItem> groceryList3;
+
 
     public ItemList() {
         groceryList = new ArrayList<>();
@@ -28,8 +31,6 @@ public class ItemList {
         groceryList.add(new GroceryItem("Onion", 6.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Corn", 6.99, "lbs", "Costco"));
         groceryList.add(new GroceryItem("Pasta", 5.99, "lbs", "Costco"));
-        /////
-        groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("Banana", 3.99, "lbs", "Superstore"));
         groceryList.add(new GroceryItem("Apple", 2.99, "lbs", "Superstore"));
         groceryList.add(new GroceryItem("Mango", 1.59, "lbs", "Superstore"));
@@ -50,8 +51,6 @@ public class ItemList {
         groceryList.add(new GroceryItem("Onion", 2.99, "lbs", "Superstore"));
         groceryList.add(new GroceryItem("Corn", 1.99, "lbs", "Superstore"));
         groceryList.add(new GroceryItem("Pasta", 1.99, "lbs", "Superstore"));
-        ////
-        groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("banana", 2.99, "lbs", "Safeway"));
         groceryList.add(new GroceryItem("apple", 1.99, "lbs", "Safeway"));
         groceryList.add(new GroceryItem("mango", 8.59, "lbs", "Safeway"));
@@ -72,6 +71,8 @@ public class ItemList {
         groceryList.add(new GroceryItem("onion", 1.99, "lbs", "Safeway"));
         groceryList.add(new GroceryItem("corn", 9.99, "lbs", "Safeway"));
         groceryList.add(new GroceryItem("pasta", 6.99, "lbs", "Safeway"));
+        groceryList.add(new GroceryItem("table", 99.99, "lbs", "Walmart"));
+
     }
 
     public ArrayList getList() {

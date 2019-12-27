@@ -5,12 +5,13 @@ import com.example.bananos.model.GroceryItem;
 import java.util.ArrayList;
 import java.util.List;
 
-class FindCheapestStore {
+public class FindCheapestTotalPriceStore {
 
     private List<GroceryItem> groceryItemList;
+    private List<String> itemNameList;
 
     //constructor
-    public FindCheapestStore(List<GroceryItem> groceryItemList) {
+    public FindCheapestTotalPriceStore(List<GroceryItem> groceryItemList) {
         this.groceryItemList = groceryItemList;
     }
 
@@ -19,19 +20,42 @@ class FindCheapestStore {
     public String getCheapestStore() {
         List<String> storesList = new ArrayList<>();
 
+        itemNameList = new ArrayList<>();
+
+
         for (GroceryItem groceryItem : groceryItemList) {
             if (!storesList.contains(groceryItem.getStore())) {
                 storesList.add(groceryItem.getStore());
             }
+            if (!itemNameList.contains(groceryItem.getName())) {
+                itemNameList.add(groceryItem.getName());
+            }
+        }
+
+        List<String> goodStoreList = new ArrayList<>();
+
+        for (String store : storesList) {
+            if (hasAllMatchingItems(store)) {
+                goodStoreList.add(store);
+            }
+        }
+
+        storesList = goodStoreList;
+
+        if (storesList.isEmpty()) {
+            return "No store that sells all items";
         }
 
         Double minPrice = 500000.0;
         String store = "error";
-        Double price = 0.0;
-
-        List<GroceryItem> temporaryList = new ArrayList<>();
+        Double price;
 
         for (String storeName : storesList) {
+            price = 0.0;
+
+            List<GroceryItem> temporaryList = new ArrayList<>();
+
+
             for (GroceryItem groceryItem : this.groceryItemList) {
                 if (groceryItem.getStore().equals(storeName)) {
                     temporaryList.add(groceryItem);
@@ -47,4 +71,18 @@ class FindCheapestStore {
         }
         return store;
     }
-}
+
+    private boolean hasAllMatchingItems(String store) {
+        int i = 0;
+        for (String itemName : itemNameList) {
+            for (GroceryItem groceryItem : groceryItemList) {
+                if (groceryItem.getName().equals(itemName)) {
+                    if (groceryItem.getStore().equals(store)) {
+                        i += 1;
+                    }
+                }
+            }
+        }
+            return (i == itemNameList.size());
+        }
+    }

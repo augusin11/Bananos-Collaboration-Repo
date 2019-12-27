@@ -3,16 +3,16 @@ package com.example.bananos.model;
 public class GroceryItem {
     private String name;
     private double price;
-    private String units;
+    private String units = "whatever";
     private String store;
     private int quantity;
 
-
-    GroceryItem(String name, double price, String units, String store) {
+    public GroceryItem(String name, double price, String units, String store) {
         this.name = name;
         this.price = price;
         this.units = units;
         this.store = store;
+        this.quantity = 0;
     }
 
     public String getName() {
@@ -47,8 +47,16 @@ public class GroceryItem {
         this.store = store;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public int getQuantity() {
         return quantity;
+    }
+
+    public String about() {
+        return quantity + " " + name + "(s) at " + "$" + price + "/" + units + " at " + store;
     }
 }
 
